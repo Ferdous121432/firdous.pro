@@ -21,11 +21,11 @@ export default function Home() {
         <Hero />
         {/* <Hero2 /> */}
         {/* <Skills />
-        <Grid />
-        <RecentProjects /> */}
+        <Grid /> */}
+        <RecentProjects />
         <Clients />
         <Experience />
-        <Approach />
+        {/* <Approach /> */}
         <Contact />
         <Footer />
       </div>
