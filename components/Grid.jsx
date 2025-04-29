@@ -1,4 +1,4 @@
-'use client";';
+"use client";
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
@@ -11,7 +11,7 @@ const Grid = () => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) return null;
+  if (typeof window === "undefined" || !isClient) return null;
 
   return (
     <section id="about">
