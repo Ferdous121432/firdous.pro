@@ -1,8 +1,17 @@
-'use client";';
 import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 
+import { useEffect, useState } from "react";
+
 const Grid = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
+
   return (
     <section id="about">
       <BentoGrid className="w-full py-20">
