@@ -15,12 +15,9 @@ const RecentProjects = () => {
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <Link
-            href={item.link}
+          <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
-            target="_blank"
-            rel="noopener noreferrer">
+            key={item.id}>
             <PinContainer title={item.link} href={item.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden max-h-[20vh] lg:max-h-[30vh] mb-10">
                 <div
@@ -70,7 +67,7 @@ const RecentProjects = () => {
                 </div>
               </div>
             </PinContainer>
-          </Link>
+          </div>
         ))}
       </div>
     </div>

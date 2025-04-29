@@ -23,13 +23,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
+          disableTransitionOnChange> */}
+        {children}
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
