@@ -20,10 +20,10 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         {/* <Hero2 /> */}
-        {/* <Skills />
+        <Skills />
         <Grid />
         <RecentProjects />
-        <Clients />
+        {/* <Clients />
         <Experience />
         <Approach /> */}
         <Contact />
