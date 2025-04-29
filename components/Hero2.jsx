@@ -8,13 +8,22 @@ import { words } from "@/data";
 // import HeroExperience from "../components/models/hero_models/HeroExperience";
 
 const Hero = () => {
-  useGSAP(() => {
-    gsap.fromTo(
-      ".hero-text h1",
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
-    );
-  });
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      gsap.fromTo(
+        ".hero-text h1",
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+      );
+    }
+  }, []);
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     ".hero-text h1",
+  //     { y: 50, opacity: 0 },
+  //     { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+  //   );
+  // });
 
   return (
     <section id="hero" className="relative overflow-hidden">
