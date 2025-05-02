@@ -1,18 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import dynamic from "next/dynamic";
-const Canvas = dynamic(
-  () => import("@react-three/fiber").then((mod) => mod.Canvas),
-  { ssr: false }
-);
-const useFrame = dynamic(
-  () => import("@react-three/fiber").then((mod) => mod.useFrame),
-  { ssr: false }
-);
-const useThree = dynamic(
-  () => import("@react-three/fiber").then((mod) => mod.useThree),
-  { ssr: false }
-);
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 
