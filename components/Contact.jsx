@@ -48,7 +48,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+      <div className="w-full h-full md:px-7 px-1">
         <div className="flex flex-col items-center">
           <h1 className="heading lg:max-w-[45vw]">
             Ready to take <span className="text-purple">your</span> digital
@@ -62,7 +62,7 @@ const Contact = () => {
 
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-xl p-4">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
