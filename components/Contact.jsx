@@ -1,9 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
-import TitleHeader from "./TitleHeader";
-import ContactExperience from "./ContactExperience";
 import MagicButton from "./MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 
@@ -117,9 +114,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
-            </div>
+            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden"></div>
           </div>
         </div>
       </div>
