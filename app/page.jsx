@@ -1,6 +1,4 @@
 import Hero from "@/components/Hero";
-import Hero2 from "@/components/Hero2";
-import Image from "next/image";
 
 import { navItems } from "@/data";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
